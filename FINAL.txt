@@ -1,0 +1,238 @@
+<html>
+<script src="JS/jquery.js"></script>
+<script src="JS/angular.js"></script>
+<script src="JS/func2.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<!-- Latest compiled Bootstrap JavaScript -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link href='css/design2.css' rel='stylesheet' type='text/css'>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<style>
+@font-face {
+  font-family: 'Josefin Slab';
+  src: url('fonts/JosefinSlab-Light.ttf') format('truetype');
+  src: url('fonts/JosefinSlab-SemiBold.ttf') format('truetype');
+  src: url('fonts/JosefinSlab-Thin.ttf') format('truetype');
+  src: url('fonts/JosefinSlab-Bold.ttf') format('truetype');
+  src: url('fonts/JosefinSlab-Regular.ttf') format('truetype');
+}		
+
+</style>
+
+<body id="bod" style="background-color:darkgray;">	
+
+<div id="top" class="top row" align="center">
+<div class="col-xs-12">
+FURNITURE STORE
+</div>
+</div>
+
+<div id="bar" class="bar">
+<div id="menu" class="menu col-xs-1" align="center" >
+<div class="menu-top" align="center">
+</div>
+<div class="menu-mid" align="center">
+</div>
+<div class="menu-bot" align="center">
+</div>
+</div>
+<div class="menu-bar">
+</div>
+<div class="col-md-2 col-sm-1 col-lg-3 col-xs-0">
+</div>
+<div id="home" class="nav col-xs-1" align="center" style="margin-left:4%;">
+HOME
+</div>
+<div id="first" class="nav col-xs-1" align="center">
+PRODUCTS
+</div>
+<div id="second" class="nav col-xs-1" align="center">
+SERVICES
+</div>
+<div id="third" class="nav col-xs-1" align="center">
+HISTORY
+</div>
+<div id="fourth" class="nav col-xs-1" align="center">
+SIGN UP
+</div>
+<div class="col-xs-3 col-md-3">
+</div>
+</div>
+
+</head>
+
+
+
+
+
+
+<div id="hom" class="hid" style="display:block;">
+
+<div class="block">	
+</div>
+<div>
+<button class="shift" ><span class="glyphicon glyphicon-chevron-right"></span></button>
+</div>
+<div>
+<button class="shift2" ><span class="glyphicon glyphicon-chevron-left"></span></button>
+</div>
+<div>
+<button class="lowright"><span class="glyphicon glyphicon-chevron-up"></span></button>
+</div>
+
+<div class="totop">
+TO TOP
+</div>
+<div class="go-down">
+GO DOWN
+</div>
+<div class="go-up">
+GO UP
+</div>
+
+<img src ="d1.jpg" width="800" height="550"> 
+<img src ="d2.jpg" width="800" height=550"> 
+<img src ="d3.jpg"width=""800" height="550"> 
+<img src ="d4.jpg"width="800" height="550"> 
+<img src ="d5.jpg"width="800" height="550"> 
+</div>
+<div id="prod" class="hid">
+<div class="block">	
+</div>
+<div>
+<button class="shift" >></button>
+</div>
+<div>
+<button class="shift2" ><</button>
+</div>
+<div>
+<button class="lowright">^</button>
+</div>
+<div class="totop">
+TO TOP
+</div>
+<div class="go-down">
+GO DOWN
+</div>
+<div class="go-up">
+GO UP
+</div>
+
+dasfasdfas
+
+</div>
+<div id="serv" class="hid">
+<div class="block">	
+</div>
+<div>
+<button class="shift" >></button>
+</div>
+<div>
+<button class="shift2" ><</button>
+</div>
+<div>
+<button class="lowright">^</button>
+
+</div>
+<div class="totop">
+TO TOP
+</div>
+<div class="go-down">
+GO DOWN
+</div>
+<div class="go-up">
+GO UP
+</div>
+
+<dl>
+<dt>ASFAFSAASFASF</dt>
+<dd>sfsasf</dd>
+</dl>
+
+
+</div>
+<div id="hist" class="hid">
+<div class="block">	
+</div>
+<div>
+<button class="shift" >></button>
+</div>
+<div>
+<button class="shift2" ><</button>
+</div>
+<div>
+<button class="lowright">^</button>
+</div>
+<div class="totop">
+TO TOP
+</div>
+<div class="go-down">
+GO DOWN
+</div>
+<div class="go-up">
+GO UP
+</div>
+dWTQWERQWRQQR
+</div>
+<div id="sign" class="sign">
+<div class="block">	
+</div>
+<div>
+<button class="shift" >></button>
+</div>
+<div>
+<button class="shift2" ><</button>
+</div>
+<div>
+<button class="lowright2">^</button>
+</div>
+<div class="totop2">
+TO TOP
+</div>
+<div class="go-down">
+GO DOWN
+</div>
+<div class="go-up">
+GO UP
+</div>
+
+<form ng-app="myApp" ng-controller="validateCtrl" name="myForm" novalidate>
+<p><h3>Username:</h3>
+<input id="input" type="text" name="user" ng-model="user" required><br><br>
+<span style="color:red" ng-show="myForm.user.$dirty && myForm.user.$invalid">
+<span ng-show="myForm.user.$error.required">Username is required.</span>
+</span>
+</p>
+
+<p><h3>Email:</h3>
+<input id="input" type="email" name="email" ng-model="email" required><br><br>
+<span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email address.</span>
+</span>
+</p>
+
+<p>
+<input id="button" type="submit"
+ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||  
+myForm.email.$dirty && myForm.email.$invalid">
+</p>
+
+</form>
+
+</div>
+
+</body>
+
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+    $scope.user = 'John Doe';
+    $scope.email = 'john.doe@gmail.com';
+});
+</script>
+
+</html>
